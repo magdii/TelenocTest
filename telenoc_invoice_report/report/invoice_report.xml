@@ -274,7 +274,7 @@
                     <li t-if="company.phone" class="list-inline-item d-inline">Phone: <span t-field="company.phone"/></li>
                     <li t-if="company.email" class="list-inline-item d-inline">Email: <span t-field="company.email"/></li>
                     <li t-if="company.website" class="list-inline-item d-inline">Web: <span t-field="company.website"/></li>
-<!--                    <li t-if="company.fax" class="list-inline-item d-inline">Fax: <span t-field="company.fax"/></li>-->
+                    <li t-if="company.fax" class="list-inline-item d-inline">Fax: <span t-field="company.fax"/></li>
                     <li class="list-inline-item d-inline"><span t-field="company.street"/>,<span t-field="company.city"/>,<span t-field="company.country_id.name"/></li>
                     <li t-if="company.partner_id.bank_ids" class="list-inline-item d-inline">Bank:<span t-field="company.partner_id.bank_ids[0].bank_id.name"/>-<span t-field="company.partner_id.bank_ids[0].bank_id.bic"/>,Account #<span t-field="company.partner_id.bank_ids[0].acc_number"/></li>
                 </ul>
