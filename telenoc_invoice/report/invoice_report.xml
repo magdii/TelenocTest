@@ -196,7 +196,7 @@
                         <li t-if="company.phone" class="list-inline-item d-inline">Tel: <span t-field="company.phone"/></li>
                         <li t-if="company.email" class="list-inline-item d-inline">Mail: <span t-field="company.email"/></li>
                         <li t-if="company.website" class="list-inline-item d-inline">Web: <span t-field="company.website"/></li>
-<!--                        <li t-if="company.vat" class="list-inline-item d-inline">VAT ID: <span t-field="company.vat"/></li><br/>-->
+                        <li t-if="company.vat" class="list-inline-item d-inline">VAT ID: <span t-field="company.vat"/></li><br/>
                         <li class="list-inline-item d-inline"><span t-field="company.street"/>,<span t-field="company.city"/>,<span t-field="company.country_id.name"/></li><br/>
                         <li t-if="company.partner_id.bank_ids" class="list-inline-item d-inline">Bank: <span t-field="company.partner_id.bank_ids[0].bank_id.name"/>-<span t-field="company.partner_id.bank_ids[0].bank_id.bic"/>,IBAN #: <span t-field="company.partner_id.bank_ids[0].acc_number"/><span t-if="company.partner_id.bank_ids[0].bank_id.city">|<span t-field="company.partner_id.bank_ids[0].bank_id.city"/></span></li>
                     </ul>
