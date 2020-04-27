@@ -82,7 +82,7 @@
 
 <!--           <xpath expr="//t[@t-set='address']//address" position="replace" />-->
            <xpath expr="//t[@t-set='address']//address" position="replace" >
-               <span t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
+               <address style="margin-bottom: -1px;" t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address", "name"], "no_marker": True}' />
                 <t t-if='o.partner_id.vat'>
                     <span>VAT ID: <span t-field="o.partner_id.vat"/></span> <br/>
                 </t>
