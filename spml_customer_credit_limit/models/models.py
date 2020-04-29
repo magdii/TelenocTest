@@ -20,10 +20,10 @@ class SaleOrder(models.Model):
                 difference_in_days = (today - invoice_date).days
                 print("1111111", type(today))
                 print("2222222", type(invoice_date))
-                if difference_in_days >= 60:
-                    raise UserError(_("This customer not allowed to"
+                # if difference_in_days >= 60:
+                raise UserError(_("This customer not allowed to"
                                       " buy any thing please check "
-                                      "his invoice '%s'")%(account.name))
+                                      "his invoice %s %s %s %s") %(today, type(today), invoice_date, type(invoice_date)))
         return res
 
 
